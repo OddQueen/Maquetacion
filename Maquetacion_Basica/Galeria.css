@@ -20,7 +20,7 @@ a {
 .container {
     display: flex;
     flex-wrap: wrap;
-    height: 100vh; 
+    height: 47vh; 
 }
 
 .container img {
