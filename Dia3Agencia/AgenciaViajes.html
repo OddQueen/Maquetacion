@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wanderlust Adventures</title>
     <link rel="stylesheet" href="AgenciaViajes.css">
+    <script src="AgenciaViajes.js"></script>
 </head>
 <body>
     <header>
@@ -67,14 +68,14 @@
     <footer>
         <form>
             <h2>Enbárcate en tu próxima aventura</h2>
-            <input type="text" placeholder="Nombre" required>
-            <input type="text" placeholder="Origen" required>
-            <input type="text" placeholder="Destino" required>
-            <input type="number" placeholder="Número de personas" required>
-            <input type="date" placeholder="Ida" required>
-            <input type="date" placeholder="Vuelta" required>
-            <button type="submit">Solicitar Información</button>
-            <button type="button">Filtrar</button>
+            <input id="nombre" type="text" placeholder="Nombre" required>
+            <input id="origen" type="text" placeholder="Origen" required>
+            <input id="destino" type="text" placeholder="Destino" required>
+            <input id="num_personas" type="number" placeholder="Número de personas" required>
+            <input id="fecha_ida" type="date" placeholder="Ida" required>
+            <input id="fecha_vuelta" type="date" placeholder="Vuelta" required>
+            <button id="collect" type="button" onclick="recoger()">Solicitar Información</button>
+            <button id="filtro" type="button" onclick="filtrar()">Filtrar</button>
         </form>
     </footer>
     <script src="AgenciaViajes.js"></script>
