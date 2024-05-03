@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Adventures</title>
+    <link rel="stylesheet" href="AgenciaViajes.css">
+    <script src="AgenciaViajes.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Wanderlust Adventures</h1>
+    </header>
+
+    <div class="descripción">
+        <h2>Wanderlust Adventures ¡Explora el mundo con un presupuesto ajustado!</h2>
+        <p>Embárcate en viajes inolvidables con Wanderlust Adventures, tu puerta de entrada a experiencias emocionantes sin gastar una fortuna. Diseñada para almas aventureras que anhelan explorar y descubrir nuevos lugares, nuestra agencia se especializa en crear experiencias de viaje inmersivas adaptadas para jóvenes en busca de aventura con un presupuesto ajustado.</p>
+        <p>Ya sea que te lances solo, te unas a un tour grupal o te aventures con amigos y familia, Wanderlust Adventures ofrece una amplia gama de destinos cautivadores y actividades emocionantes. Desde caminatas por exuberantes bosques tropicales hasta sumergirte en vibrantes culturas urbanas, ofrecemos tours cuidadosamente seleccionados para todos los gustos.</p>
+        <p>Únete a nosotros en un viaje inolvidable y desbloquea las maravillas del mundo con Wanderlust Adventures. Deja que tu espíritu aventurero vuele libre mientras creas recuerdos duraderos y forjas nuevas amistades en el camino. ¡Tu próxima gran aventura te espera con Wanderlust Adventures!</p>
+    </div>
+
+    <div class="destinos">
+        <h2>Destinos populares</h2>
+        <div class="destino">
+            <img src="PETRA.jpg" alt="Petra">
+            <div class="info">
+                <p><strong>Petra</strong></p>
+                <p>Descubre la majestuosidad de Petra, una ciudad antigua tallada en la roca rosa en el corazón de jordania, donde cada callejón revela la grandeza de una civilización antigua. Sumérgete en su atmósfera mística mientras exploras sus templos y tumbas talladas en la roca, maravillándote con su arquitectura impresionante y su fascinante historia.</p>
+            </div>
+        </div>
+        <div class="destino">
+            <img src="ROME.jpg" alt="Roma">
+            <div class="info">
+                <p><strong>Roma</strong></p>
+                <p>Embárcate en un viaje a la Ciudad Eterna y sumérgete en la grandeza de Roma, donde cada ruina cuenta una historia milenaria. Recorre sus calles empedradas y descubre sus monumentos antiguos, desde el imponente Coliseo hasta el magnífico Panteón, mientras te seduces con su deliciosa cocina y su encanto inigualable.</p>
+            </div>
+        </div>
+        <div class="destino">
+            <img src="LAGOS.jpg" alt="Lagos">
+            <div class="info">
+                <p><strong>Lagos</strong></p>
+                <p>Sumérgete en la vitalidad de Lagos, una metrópolis vibrante en la costa Nigeriana que te invita a explorar sus playas de ensueño y su bulliciosa vida nocturna. Disfruta del sol en sus playas doradas, sumérgete en sus aguas cristalinas y déjate envolver por la energía de su cultura diversa mientras te sumerges en una experiencia única llena de color y emoción.</p>
+            </div>
+        </div>
+    </div>    
+
+    <div class="ofertas">
+        <h2>Ofertas especiales</h2>
+        <div class="oferta">
+            <img src="PARIS.jpg" alt="Oferta 1">
+            <div class="info">
+                <p><strong>Francia</strong></p>
+                <p><strong>Desde 400€</strong></p>
+            </div>
+        </div>
+        <div class="oferta">
+            <img src="TAILANDIA.jpg" alt="Oferta 2">
+            <div class="info">
+                <p><strong>Tailandia</strong></p>
+                <p><strong>Desde 500€</strong></p>
+            </div>
+        </div>
+    </div>
+    
+        </div>
+    </div>
+
+    <footer>
+        <form>
+            <h2>Enbárcate en tu próxima aventura</h2>
+            <input id="nombre" type="text" placeholder="Nombre" required>
+            <input id="origen" type="text" placeholder="Origen" required>
+            <input id="destino" type="text" placeholder="Destino" required>
+            <input id="num_personas" type="number" placeholder="Número de personas" required>
+            <input id="fecha_ida" type="date" placeholder="Ida" required>
+            <input id="fecha_vuelta" type="date" placeholder="Vuelta" required>
+            <button id="collect" type="button" onclick="recoger()">Solicitar Información</button>
+            <button id="filtro" type="button" onclick="filtrar()">Filtrar</button>
+        </form>
+    </footer>
+    <script src="AgenciaViajes.js"></script>
+</body>
+</html>
