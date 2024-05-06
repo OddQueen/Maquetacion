@@ -22,16 +22,15 @@ function recoger() {
 
 function filtrar() {
     let solicitudesFiltradas = [];
-    let filtro = document.getElementById('destino').value.toLowerCase();
-    console.log(filtro);
-    for (let i = 0; i < persona.filtro.length; i++) {
+
+    for (let i = 0; i < persona.length; i++) {
         let destino = persona[i].destino.toLowerCase();
         if (destino === 'canarias' || destino === 'mallorca' || destino === 'galicia') {
-            solicitudesFiltradas.push(solicitudes[i]);
+            solicitudesFiltradas.push(persona[i]);
+        } else {
+            solicitudesFiltradas.push("destino no es canarias, mallorca ni galicia");
         }
     }
 
     console.log(solicitudesFiltradas);
 }
-
-
