@@ -1,0 +1,110 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
+    width: 80%;
+    height: 80vh; 
+}
+
+.header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    grid-row: y0;
+    grid-column: x0 / x4;
+    padding: 20px;
+    font-size: larger;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-column: x0 / x4;
+    grid-row: y1 / y3;
+}
+
+.content {
+    background-color: blue;
+    color: white;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contenido {
+    padding: 20px;
+    border: 2px solid white;
+    grid-row: 1;
+    grid-column: 1 / span 4;
+}
+
+.texto1, .texto2 {
+    padding: 20px;
+    border: 2px solid white;
+}
+
+.texto1 {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+}
+
+.texto2 {
+    grid-row: 2;
+    grid-column: 2 / span 1;
+}
+
+.menus {
+    background-color: rgb(0, 192, 145);
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    padding: 10px; 
+    box-sizing: border-box;
+    row-gap: 8px;
+}
+
+.menu {
+    padding: 20px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.menu1, .menu2, .menu3 {
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(97, 28, 191);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    grid-row: y3;
+    grid-column: x0 / x4;
+    gap: 10px;
+}
+
+.footer, .contacto {
+    border: 2px solid black;
+    padding: 10px;
+    flex-basis: 50%;
+    text-align: center;
+}

@@ -1,0 +1,62 @@
+.GridAreas {
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'asides content content'
+    'footer footer footer';
+    height: 100vh;
+    text-align: center;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkred; 
+    color: white;
+    padding: 20px;
+    grid-area: header;
+}
+
+.imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(100, 18, 16); 
+    color: white;
+    padding: 20px;
+    grid-area: imagen;
+}
+
+.Asides {
+    background-color: rgb(235, 136, 6); 
+    padding: 20px;
+    grid-gap: 20px;
+    grid-area: asides;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+aside {
+    background-color: white; 
+    color: orange;
+}
+
+.Content {
+    display: grid;
+    grid-template-rows: auto auto;
+    background-color: rgb(255, 57, 30); 
+    color: white;
+    padding: 20px;
+    grid-gap: 20px;
+    grid-area: content;
+}
+
+footer {
+    background-color: rgb(100, 18, 16); 
+    color: white;
+    line-height: 50px; 
+    grid-area: footer;
+}

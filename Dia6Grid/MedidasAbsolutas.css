@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 50% 50%;
+    height: 66vh;
+    width: 60%;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.A {
+    background-color: rgb(157, 254, 76); 
+}
+
+.B {
+    background-color: rgb(255, 149, 45); 
+}
+
+.C {
+    background-color: rgb(255, 94, 35); 
+}
+
+.D {
+    background-color: red; 
+}
+
+.E {
+    background-color: blue; 
+}
+
+.F {
+
+    background-color: yellow; 
+}
