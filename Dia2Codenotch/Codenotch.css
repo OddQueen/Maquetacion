@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 255, 0.918);
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+
+.navbar .links a {
+    color: white;
+    text-decoration: none;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+}
+
+.header p {
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cursos {
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.cursos .curso {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.cursos .curso h3 {
+    margin-top: 0;
+}
+
+.testimonios {
+    background-image: url('assets/JaneSmith.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonios .testimonio {
+    background-color: rgba(255, 255, 255, 0.426);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.testimonios blockquote {
+    margin: 0;
+}
+
+.testimonios blockquote p {
+    margin-bottom: 10px;
+}
+
+.testimonios blockquote cite {
+    font-style: italic;
+}
+
+.webinars {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.webinars .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.webinars .webinar {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 45%;
+}
+
+.webinars .webinar h3 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+

@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: blue;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+
+.navbar .links a {
+    color: white;
+    text-decoration: none;
+    justify-content: space-evenly;
+}
+
+header {
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    width: 40%;
+    margin: 0 auto;
+}
+
+form {
+    margin-top: 20px;
+    margin-right: 20px;
+    flex-grow: 1;
+}
+
+label,
+input,
+textarea,
+button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+}
+
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
