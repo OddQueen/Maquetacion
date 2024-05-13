@@ -1,13 +1,6 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-body {
-    margin: 0;
-    padding: 0;
+    height: 80vh;
+    font-size: x-large;
 }
 
 .grid-container {
@@ -41,9 +34,10 @@ main {
     color: white;
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 10px 1fr;
     padding: 10px;
     box-sizing: border-box;
+    gap: 10px;
 }
 
 .contenido {
@@ -60,27 +54,26 @@ main {
 
 .texto1 {
     grid-row: 2;
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
 }
 
 .texto2 {
     grid-row: 2;
-    grid-column: 2 / span 1;
+    grid-column: 4 / span 1;
 }
 
 .menus {
     background-color: rgb(0, 192, 145);
     color: white;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);;
+    grid-template-columns: 1fr;;
     padding: 10px; 
     box-sizing: border-box;
     row-gap: 8px;
 }
 
 .menu {
-    padding: 20px;
     border: 2px solid black;
     text-align: center;
 }

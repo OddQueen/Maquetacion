@@ -1,18 +1,17 @@
 .GridAreas {
     display: grid;
     grid-template-areas: 
-    'header header header'
+    'header header imagen'
+    'asides content content'
     'asides content content'
     'footer footer footer';
-    height: 100vh;
+    height: 80vh;
     text-align: center;
+    font-size: x-large;
 }
 
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: darkred; 
     color: white;
     padding: 20px;
@@ -20,9 +19,6 @@
 }
 
 .imagen {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: rgb(100, 18, 16); 
     color: white;
     padding: 20px;
@@ -30,13 +26,11 @@
 }
 
 .Asides {
-    background-color: rgb(235, 136, 6); 
+    background-color: rgb(235, 113, 6); 
     padding: 20px;
-    grid-gap: 20px;
+    display: grid;
+    gap: 250px;
     grid-area: asides;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 aside {
@@ -50,8 +44,13 @@ aside {
     background-color: rgb(255, 57, 30); 
     color: white;
     padding: 20px;
-    grid-gap: 20px;
     grid-area: content;
+    gap: 10px;
+}
+
+.Contenido, .Texto {
+    border: 2px solid white;
+    padding: 10px;
 }
 
 footer {
